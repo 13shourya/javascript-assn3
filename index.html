@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+        <h2>User Information</h2>
+        <form id="userForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="address" placeholder="Address">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="province" placeholder="Province">
+            
+            <label><input type="radio" name="membership" value="Premium" checked> Premium</label>
+            <label><input type="radio" name="membership" value="Standard"> Standard</label>
+            <label><input type="radio" name="membership" value="Basic"> Basic</label>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+        <div id="output">
+            <h3>Form Submission Result:</h3>
+            <p><strong>Full Name:</strong> <span id="outputFullName"></span></p>
+            <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+            <p><strong>Address:</strong> <span id="outputAddress"></span></p>
+            <p><strong>City:</strong> <span id="outputCity"></span></p>
+            <p><strong>Province:</strong> <span id="outputProvince"></span></p>
+            <p><strong>Membership:</strong> <span id="outputMembership"></span></p>
+        </div>
+    </div>
+    <footer>
+<p>
+Georgian @ ILAC - HTML, CSS, and JavaScript Assignment#3 - Shourya Baweja and Ankush Ankush
+</p>
+</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
